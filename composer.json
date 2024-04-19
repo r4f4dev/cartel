@@ -14,7 +14,8 @@
     },
     "require-dev": {
         "illuminate/session": "^5.8|^6.0|^7.0|^8.0|^9.0|^10.0",
-        "illuminate/database": "^5.8|^6.0|^7.0|^8.0|^9.0|^10.0"
+        "illuminate/database": "^5.8|^6.0|^7.0|^8.0|^9.0|^10.0",
+        "sultanov-solutions/micro": "^0"
     },
     "autoload": {
         "psr-4": {
@@ -30,5 +31,13 @@
                 "Cartel": "r4f4dev\\Cartel\\Facades\\Cartel"
             }
         }
+    },
+    "scripts": {
+        "install-micro": [
+            "SultanovSolutions\\Micro\\Micro::copyStubs"
+        ],
+        "set-package-name": [
+            "SultanovSolutions\\Micro\\Micro::setPackageName"
+        ]
     }
 }

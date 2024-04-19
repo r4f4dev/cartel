@@ -2,3 +2,8 @@
 /.idea
 composer.lock
 docker
+artisan
+.env
+.env.example
+index.php
+public/index.php
