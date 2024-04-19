@@ -1,0 +1,34 @@
+{
+    "name": "r4f4dev/cartel",
+    "version": "1.0",
+    "description": "A cart for Laravel",
+    "keywords": [
+      "laravel", "laravel cart", "cart laravel", "cart","ecommerce laravel cart", "laravel ecommerce"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^8.0",
+        "illuminate/support": "^5.8|^6.0|^7.0|^8.0|^9.0|^10.0"
+    },
+    "require-dev": {
+        "illuminate/session": "^5.8|^6.0|^7.0|^8.0|^9.0|^10.0",
+        "illuminate/database": "^5.8|^6.0|^7.0|^8.0|^9.0|^10.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "r4f4dev\\Cartel\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "r4f4dev\\Cartel\\Providers\\CartelServiceProvider"
+            ],
+            "aliases": {
+                "Cartel": "r4f4dev\\Cartel\\Facades\\Cartel"
+            }
+        }
+    }
+}
